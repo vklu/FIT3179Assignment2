@@ -1,0 +1,28 @@
+#choropleth_map {
+	/*height: 1000px;
+	width: 800px;*/
+}
+html, body {
+	padding: 20px;
+	background-color: beige;
+}
+h1 {
+	font-size: 48px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+h2 {
+	font-size: 36px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	background-color: red;
+}
+h4 {
+	font-size: 12px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+p{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}

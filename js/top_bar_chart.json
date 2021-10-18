@@ -1,0 +1,29 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Top Risk Factors for Death in 2017",
+  "width": 800,
+  "data": {"url": "https://raw.githubusercontent.com/vklu/FIT3179Vega-Lite/main/Homework%20Week%209/data/risk-factor-death.csv"},
+  "mark": "bar",
+  "transform": [
+    {
+      "window": [{"op": "rank", "as": "rank"}],
+      "sort": [{ "field": "Count", "order": "descending" }]
+    },
+    {"filter": "datum.rank <= 20"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "Count",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "RiskFactor",
+      "type": "nominal",
+      "sort": {"field": "Count", "op": "average", "order":"descending"}
+    },
+    "color": {"field": "Color", "type": "nominal", "scale": null},
+    "tooltip": [{"field": "RiskFactor", "title": "Risk Factor"},
+    {"field": "Count", "title": "Deaths", "format": ".0f"}]
+    },
+    "config": {"background": "beige", "title": {"font": "roboto", "fontSize": 16, "fontWeight": "bold"}}
+}
