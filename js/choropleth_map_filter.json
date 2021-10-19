@@ -43,7 +43,7 @@
     "scale": {
       "type": "threshold",
       "domain": [100,200,300],
-      "range": ["#ffec19","#ffc100","#ff5607","f6412d"]
+      "range": ["#ffc100","#ff9800","#ff5607","f6412d"]
     },
     "legend": {"title": "Deaths per 100k"}
   },
