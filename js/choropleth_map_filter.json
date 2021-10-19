@@ -41,8 +41,9 @@
     "field": "Air pollution (total) (deaths per 100,000)",
     "type": "quantitative",
     "scale": {
-      "type": "linear",
-      "range": ["#ffa230","#dd2109","#dd6342"]
+      "type": "threshold",
+      "domain": [100,200,300],
+      "range": ["#ffec19","#ffc100","#ff5607","f6412d"]
     },
     "legend": {"title": "Deaths per 100k"}
   },
